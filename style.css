@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --primary-color: hsl(180, 29%, 50%);
+  --background-color: hsl(180, 52%, 96%);
+  --filter-color: hsl(180, 31%, 95%);
+  --secondary-color: hsl(180, 8%, 52%);
+  --detail-color: hsl(180, 14%, 20%);
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  background: var(--background-color);
+  font-size: 15px;
+}
+
+header {
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  background: var(--primary-color);
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container {
+  width: 90vw;
+  padding: 32px 18px 16px 18px;
+  margin: 24px;
+  background: white;
+  border-radius: 10px;
+  position: relative;
+}
+.filter-box {
+  background: white;
+  width: 90vw;
+  padding: 18px 18px 12px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+.filter {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.reset-btn {
+  color: gray;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 12px;
+}
+
+.logo {
+  position: absolute;
+  top: -20px;
+}
+.logo img {
+  width: 40px;
+}
+.company-name {
+  margin-right: 12px;
+}
+.company-name a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 700;
+}
+.new-job {
+  background: var(--primary-color);
+  color: var(--background-color);
+  border-radius: 15px;
+  padding: 6px 8px 4px 8px;
+  margin: 0 8px 0 8px;
+}
+.bar {
+  background: var(--primary-color);
+  position: absolute;
+  top: 0;
+  left: -10px;
+  bottom: 0px;
+  padding: 6px 4px;
+  border-radius: 15px 0 0 15px;
+  margin: 0 8px;
+}
+.featured {
+  border-radius: 15px;
+  color: var(--background-color);
+  background: var(--detail-color);
+  padding: 6px 8px 4px 8px;
+}
+.position-name {
+  margin: 12px 0 12px 0;
+  font-weight: 700;
+}
+.info {
+  border-bottom: solid 1px gray;
+  padding: 0 0 18px 0;
+}
+.info span {
+  color: var(--secondary-color);
+  cursor: pointer;
+  margin-right: 12px;
+}
+.items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.role,
+.level,
+.language {
+  background: var(--background-color);
+  padding: 8px;
+  color: var(--primary-color);
+  font-weight: 700;
+  margin: 0 12px 12px 0;
+  cursor: pointer;
+  border-radius: 6px;
+}
